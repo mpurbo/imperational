@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-internal class FibonacciKotlinKtTest {
+internal class FibonacciKotlinTest {
 
-    val fibonacci1 = listOf(0)
-    val fibonacci2 = listOf(0, 1)
-    val fibonacci3 = listOf(0, 1, 1)
-    val fibonacci29 = listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811)
+    private val fibonacci1 = listOf(0)
+    private val fibonacci2 = listOf(0, 1)
+    private val fibonacci3 = listOf(0, 1, 1)
+    private val fibonacci29 = listOf(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811)
 
     @Test
     fun imperative() {
