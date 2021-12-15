@@ -3,7 +3,7 @@ package org.purbo.imperational.gof.abstractfactory.animal;
 import java.util.function.Function;
 import java.util.function.BiFunction;
 
-public class FunctionalEcosystem {
+public class FunctionalEcosystemJava {
 
     /**
      * A helper to make recursive lambda definition possible.

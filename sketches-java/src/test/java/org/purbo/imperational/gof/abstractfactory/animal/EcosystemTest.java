@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.purbo.imperational.gof.abstractfactory.animal.FunctionalEcosystem.*;
+import static org.purbo.imperational.gof.abstractfactory.animal.FunctionalEcosystemJava.*;
 
 public class EcosystemTest {
 
@@ -28,7 +28,7 @@ public class EcosystemTest {
 
     @Test
     void testImperative() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
-        ImperativeEcosystem ecosystem = new ImperativeEcosystem(List.of(
+        ImperativeEcosystemJava ecosystem = new ImperativeEcosystemJava(List.of(
                 AnimalFactory.createAnimal(Bird.class, Air.class, birdInitialPosition),
                 AnimalFactory.createAnimal(Fish.class, Water.class, fishInitialPosition),
                 AnimalFactory.createAnimal(Dog.class, Earth.class, dogInitialPosition)

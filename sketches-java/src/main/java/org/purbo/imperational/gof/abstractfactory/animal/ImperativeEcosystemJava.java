@@ -5,11 +5,11 @@ import java.util.List;
 /**
  * Ecosystem is the "client" of Abstract Factory
  */
-public class ImperativeEcosystem {
+public class ImperativeEcosystemJava {
 
     List<Animal> animals;
 
-    public ImperativeEcosystem(List<Animal> animals) {
+    public ImperativeEcosystemJava(List<Animal> animals) {
         this.animals = animals;
     }
 
