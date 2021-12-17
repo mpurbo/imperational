@@ -29,9 +29,9 @@ public class EcosystemTest {
     @Test
     void testImperative() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         ImperativeEcosystemJava ecosystem = new ImperativeEcosystemJava(List.of(
-                AnimalFactory.createAnimal(Bird.class, Air.class, birdInitialPosition),
-                AnimalFactory.createAnimal(Fish.class, Water.class, fishInitialPosition),
-                AnimalFactory.createAnimal(Dog.class, Earth.class, dogInitialPosition)
+                BirdFactory.create(birdInitialPosition),
+                FishFactory.create(fishInitialPosition),
+                DogFactory.create(dogInitialPosition)
         ));
         ecosystem.onNaturalDisaster(disasterLocation);
         List<Animal> animals = ecosystem.getAnimals();
