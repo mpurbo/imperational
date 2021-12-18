@@ -9,14 +9,14 @@ public class Dog extends AbstractAnimal {
     }
 
     private void jumpAway(Position fromPosition) {
-        Position direction = this.position.relativeTo(fromPosition);
+        Position direction = this.position.relativeTo(fromPosition).direction();
         this.position.setX(position.getX() + (Constants.MAGIC_NUMBER_UNIT_PER_JUMP * direction.getX()));
         this.position.setY(position.getY() + (Constants.MAGIC_NUMBER_UNIT_PER_JUMP * direction.getY()));
     }
 
     @Override
     public boolean isSafeFrom(Position position) {
-        return distance(this.position, position) > 200;
+        return Position.distance(this.position, position) > 200;
     }
 
 }

@@ -18,12 +18,12 @@ public class EcosystemTest {
     static final Position disasterLocation = new Position(10, 10);
 
     void assertPositions(List<Position> positions) {
-        assertEquals(positions.get(0).getX(), 58);
+        assertEquals(positions.get(0).getX(), 28);
         assertEquals(positions.get(0).getY(), 26);
-        assertEquals(positions.get(1).getX(), 52);
-        assertEquals(positions.get(1).getY(), -32);
-        assertEquals(positions.get(2).getX(), 64);
-        assertEquals(positions.get(2).getY(), -44);
+        assertEquals(positions.get(1).getX(), 22);
+        assertEquals(positions.get(1).getY(), -2);
+        assertEquals(positions.get(2).getX(), 24);
+        assertEquals(positions.get(2).getY(), -4);
     }
 
     @Test

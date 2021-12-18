@@ -45,7 +45,7 @@ public class FunctionalEcosystemJava {
     public static BiFunction<Position, Position, Position> bird() {
         return animal(
                 (fromPosition, currentPosition) -> {
-                    Position direction = currentPosition.relativeTo(fromPosition);
+                    Position direction = currentPosition.relativeTo(fromPosition).direction();
                     return new Position(
                             currentPosition.getX() + (Constants.MAGIC_NUMBER_UNIT_PER_WINGS_FLAP * direction.getX()),
                             currentPosition.getY() + (Constants.MAGIC_NUMBER_UNIT_PER_WINGS_FLAP * direction.getY())
@@ -59,7 +59,7 @@ public class FunctionalEcosystemJava {
     public static BiFunction<Position, Position, Position> dog() {
         return animal(
                 (fromPosition, currentPosition) -> {
-                    Position direction = currentPosition.relativeTo(fromPosition);
+                    Position direction = currentPosition.relativeTo(fromPosition).direction();
                     return new Position(
                             currentPosition.getX() + (Constants.MAGIC_NUMBER_UNIT_PER_JUMP * direction.getX()),
                             currentPosition.getY() + (Constants.MAGIC_NUMBER_UNIT_PER_JUMP * direction.getY())
@@ -73,7 +73,7 @@ public class FunctionalEcosystemJava {
     public static BiFunction<Position, Position, Position> fish() {
         return animal(
                 (fromPosition, currentPosition) -> {
-                    Position direction = currentPosition.relativeTo(fromPosition);
+                    Position direction = currentPosition.relativeTo(fromPosition).direction();
                     return new Position(
                             currentPosition.getX() + (Constants.MAGIC_NUMBER_UNIT_PER_STROKE * direction.getX()),
                             currentPosition.getY() + (Constants.MAGIC_NUMBER_UNIT_PER_STROKE * direction.getY())

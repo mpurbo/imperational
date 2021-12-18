@@ -40,10 +40,4 @@ public abstract class AbstractAnimal implements Animal {
         this.medium.letAnimalMovesThrough(this);
     }
 
-    public static int distance(Position position1, Position position2) {
-        int deltax = position1.getX() - position2.getX();
-        int deltay = position1.getY() - position2.getY();
-        return (deltax * deltax) + (deltay * deltay);
-    }
-
 }

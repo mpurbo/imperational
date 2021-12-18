@@ -9,14 +9,14 @@ public class Fish extends AbstractAnimal {
     }
 
     private void swimAway(Position fromPosition) {
-        Position direction = this.position.relativeTo(fromPosition);
+        Position direction = this.position.relativeTo(fromPosition).direction();
         this.position.setX(position.getX() + (Constants.MAGIC_NUMBER_UNIT_PER_STROKE * direction.getX()));
         this.position.setY(position.getY() + (Constants.MAGIC_NUMBER_UNIT_PER_STROKE * direction.getY()));
     }
 
     @Override
     public boolean isSafeFrom(Position position) {
-        return distance(this.position, position) > 75;
+        return Position.distance(this.position, position) > 75;
     }
 
 }

@@ -44,4 +44,13 @@ public class Position {
     public Position direction() {
         return new Position(x/Math.abs(x), y/Math.abs(y));
     }
+
+    /**
+     * Utility function to find the distance between to position.
+     */
+    public static int distance(Position position1, Position position2) {
+        int deltax = position1.getX() - position2.getX();
+        int deltay = position1.getY() - position2.getY();
+        return (deltax * deltax) + (deltay * deltay);
+    }
 }
